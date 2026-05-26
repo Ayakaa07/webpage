@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>自己紹介</title>
+  <title>プーさんと友達の紹介</title>
   <style>
     * {
       box-sizing: border-box;
@@ -11,134 +11,334 @@
 
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #1f2933;
-      background: #f4f7f8;
-      display: grid;
-      place-items: center;
-      padding: 24px;
+      color: #25313d;
+      background: #fff8e6;
     }
 
-    main {
-      width: min(100%, 720px);
-      background: #ffffff;
-      border: 1px solid #d9e2e7;
-      border-radius: 8px;
-      padding: 40px;
-      box-shadow: 0 16px 40px rgba(31, 41, 51, 0.08);
+    header {
+      background: #f6c453;
+      padding: 56px 24px 48px;
+      text-align: center;
+      border-bottom: 6px solid #d98c2b;
     }
 
-    .profile {
-      display: grid;
-      gap: 24px;
-    }
-
-    .avatar {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      background: #2f6f73;
-      color: #ffffff;
-      display: grid;
-      place-items: center;
-      font-size: 32px;
-      font-weight: 700;
+    header p {
+      margin: 14px auto 0;
+      max-width: 640px;
+      line-height: 1.8;
+      color: #4b3b24;
+      font-size: 17px;
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: clamp(32px, 6vw, 48px);
+      margin: 0;
+      font-size: clamp(34px, 7vw, 56px);
       line-height: 1.1;
     }
 
-    .role {
-      margin: 0;
-      color: #52616b;
-      font-size: 18px;
+    main {
+      width: min(100%, 1040px);
+      margin: 0 auto;
+      padding: 40px 20px 56px;
     }
 
-    p {
+    .intro {
+      background: #ffffff;
+      border: 1px solid #efd99d;
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 28px;
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 12px 32px rgba(111, 79, 40, 0.08);
+    }
+
+    .pooh-photo {
+      width: 100%;
+      aspect-ratio: 1200 / 630;
+      object-fit: contain;
+      background: #fff1bd;
+      border-radius: 8px;
+      border: 1px solid #efd99d;
+      display: block;
+    }
+
+    .intro h2,
+    .friends h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .intro p {
       margin: 0;
       line-height: 1.8;
     }
 
-    .section {
-      border-top: 1px solid #e4ebef;
-      padding-top: 24px;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 18px;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-      line-height: 1.8;
-    }
-
-    .links {
+    .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      padding-top: 8px;
+      gap: 10px;
     }
 
-    .links a {
+    .tag {
+      background: #fff1bd;
+      border: 1px solid #f2d36b;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .friends {
+      display: grid;
+      gap: 18px;
+    }
+
+    .friend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .friend-card {
+      background: #ffffff;
+      border: 1px solid #eadfca;
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 220px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(111, 79, 40, 0.06);
+    }
+
+    .friend-photo {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      background: #fff8e6;
+      border-radius: 8px;
+      border: 1px solid #eadfca;
+      display: block;
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
       color: #ffffff;
-      background: #2f6f73;
-      text-decoration: none;
-      padding: 10px 14px;
-      border-radius: 6px;
-      font-weight: 600;
+      font-weight: 800;
+      font-size: 20px;
     }
 
-    .links a:hover {
-      background: #24585b;
+    .pooh {
+      background: #d99a23;
     }
 
-    @media (max-width: 520px) {
+    .piglet {
+      background: #d8789a;
+    }
+
+    .tigger {
+      background: #df6f2d;
+    }
+
+    .eeyore {
+      background: #69778c;
+    }
+
+    .rabbit {
+      background: #7e9f4f;
+    }
+
+    .owl {
+      background: #7b5a3d;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .friend-card p {
+      margin: 0;
+      line-height: 1.7;
+      color: #4e5a64;
+    }
+
+    .quote {
+      margin-top: 4px;
+      padding-left: 12px;
+      border-left: 4px solid #f2d36b;
+      color: #3f4650;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      color: #6f604a;
+      padding: 0 20px 32px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .friend-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        padding: 44px 20px 36px;
+      }
+
       main {
-        padding: 28px;
+        padding-top: 28px;
+      }
+
+      .intro,
+      .friend-card {
+        padding: 20px;
+      }
+
+      .friend-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>プーさんと友達の紹介</h1>
+    <p>
+      のんびり屋のプーさんと、森で一緒に過ごす友達たち。
+      それぞれの性格や魅力を、やさしい雰囲気でまとめました。
+    </p>
+  </header>
+
   <main>
-    <section class="profile" aria-labelledby="name">
-      <div class="avatar" aria-hidden="true">山</div>
-
-      <header>
-        <h1 id="name">山田 太郎</h1>
-        <p class="role">Web制作とデザインが好きな学習者</p>
-      </header>
-
+    <section class="intro" aria-labelledby="pooh-title">
+      <h2 id="pooh-title">プーさん</h2>
+      <img
+        class="pooh-photo"
+        src="pooh_221216_1200_630_ogp.avif"
+        alt="プーさんの紹介画像"
+      >
       <p>
-        はじめまして。シンプルで使いやすいWebサイトを作ることに興味があります。
-        現在はHTML、CSS、JavaScriptを学びながら、自分の作品を少しずつ増やしています。
+        プーさんは、はちみつが大好きで、ゆっくり考えながら毎日を楽しむくまのぬいぐるみです。
+        難しいことよりも、友達と一緒にいる時間や小さな幸せを大切にしています。
       </p>
-
-      <div class="section">
-        <h2>好きなこと</h2>
-        <ul>
-          <li>Webサイト制作</li>
-          <li>写真を撮ること</li>
-          <li>新しいツールを試すこと</li>
-        </ul>
+      <div class="quote">「小さな幸せを見つけると、今日もいい日になるね。」</div>
+      <div class="tags" aria-label="プーさんの特徴">
+        <span class="tag">はちみつ好き</span>
+        <span class="tag">おっとり</span>
+        <span class="tag">友達思い</span>
+        <span class="tag">森の人気者</span>
       </div>
+    </section>
 
-      <div class="section">
-        <h2>連絡先</h2>
-        <p>お気軽にご連絡ください。</p>
-        <div class="links">
-          <a href="mailto:example@example.com">メール</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
+    <section class="friends" aria-labelledby="friends-title">
+      <h2 id="friends-title">友達の紹介</h2>
+      <div class="friend-grid">
+        <article class="friend-card">
+          <div class="icon piglet" aria-hidden="true">ピ</div>
+          <h3>ピグレット</h3>
+          <img
+            class="friend-photo"
+            src="ピグレット.webp"
+            alt="ピグレットの紹介画像"
+          >
+          <p>
+            小さくて少し心配性だけれど、とてもやさしい友達です。
+            勇気を出して仲間のために行動するところが魅力です。
+          </p>
+          <div class="quote">「こわくても、友達のためなら一歩進めるよ。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon tigger" aria-hidden="true">テ</div>
+          <h3>ティガー</h3>
+          <img
+            class="friend-photo"
+            src="images.png"
+            alt="ティガーの紹介画像"
+          >
+          <p>
+            元気いっぱいで、楽しいことが大好きな友達です。
+            まわりまで明るくするような、弾むような性格です。
+          </p>
+          <div class="quote">「楽しいことは、跳びはねながら探しに行こう。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon eeyore" aria-hidden="true">イ</div>
+          <h3>イーヨー</h3>
+          <img
+            class="friend-photo"
+            src="45492756.gif"
+            alt="イーヨーの紹介画像"
+          >
+          <p>
+            落ち着いた雰囲気で、少しさびしがり屋な友達です。
+            みんなに見守られながら、森で静かに過ごしています。
+          </p>
+          <div class="quote">「静かな日にも、そばにいてくれる友達がいる。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon rabbit" aria-hidden="true">ラ</div>
+          <h3>ラビット</h3>
+          <img
+            class="friend-photo"
+            src="ラビット.jpg"
+            alt="ラビットの紹介画像"
+          >
+          <p>
+            しっかり者で、計画を立てたり畑の世話をしたりするのが得意です。
+            仲間をまとめる頼れる存在です。
+          </p>
+          <div class="quote">「準備をしておけば、森の一日もうまくいく。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon owl" aria-hidden="true">オ</div>
+          <h3>オウル</h3>
+          <img
+            class="friend-photo"
+            src="ouru.png"
+            alt="オウルの紹介画像"
+          >
+          <p>
+            物知りで、みんなに助言をしてくれる友達です。
+            森の中では相談相手のような存在です。
+          </p>
+          <div class="quote">「考える時間は、答えに近づくための道しるべだよ。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon pooh" aria-hidden="true">ク</div>
+          <h3>クリストファー・ロビン</h3>
+          <img
+            class="friend-photo"
+            src="kurisu.jpg"
+            alt="クリストファー・ロビンの紹介画像"
+          >
+          <p>
+            プーさんたちの大切な友達です。
+            みんなと遊び、話を聞き、森での時間を一緒に楽しみます。
+          </p>
+          <div class="quote">「大切な友達との時間は、ずっと心に残るよ。」</div>
+        </article>
       </div>
     </section>
   </main>
+
+  <footer>
+    <p>プーさんと友達の魅力をまとめた紹介ページです。</p>
+  </footer>
 </body>
 </html>
