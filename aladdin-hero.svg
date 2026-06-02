@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f4c81"/>
+  <path d="M0 380c160-70 315-70 465 0s310 70 480 0c82-34 167-48 255-42v292H0z" fill="#f3c45b"/>
+  <path d="M0 455c155-34 305-33 450 3s294 35 448 0c116-26 217-34 302-25v197H0z" fill="#d99a23"/>
+  <circle cx="935" cy="116" r="54" fill="#f6d36c"/>
+  <circle cx="960" cy="100" r="54" fill="#0f4c81"/>
+  <g fill="#ffffff" opacity=".85">
+    <path d="M158 88l10 20 22 3-16 16 4 22-20-10-20 10 4-22-16-16 22-3z"/>
+    <path d="M418 132l8 16 18 3-13 13 3 18-16-8-16 8 3-18-13-13 18-3z"/>
+    <path d="M1070 246l9 19 21 3-15 15 4 21-19-10-19 10 4-21-15-15 21-3z"/>
+  </g>
+  <g transform="translate(420 190)">
+    <path d="M120 200c40-80 168-80 208 0 18 36-12 80-104 80s-122-44-104-80z" fill="#6f4aa8"/>
+    <path d="M136 170c62 28 116 28 176 0 0 42-28 78-88 78s-88-36-88-78z" fill="#8f69c9"/>
+    <path d="M190 112c50-62 116-70 176-20-54-7-94 12-120 58z" fill="#f3c45b"/>
+    <path d="M82 206c-76-20-72-92 0-106 70-14 117 38 82 86-14 20-40 27-82 20z" fill="#f3c45b"/>
+    <path d="M300 195c74-18 114 27 96 73-17 44-84 42-112-2" fill="none" stroke="#f3c45b" stroke-width="24" stroke-linecap="round"/>
+    <ellipse cx="224" cy="173" rx="84" ry="24" fill="#f8dd8a"/>
+  </g>
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#ffffff">ALADDIN</text>
+</svg>

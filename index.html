@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プーさんと友達の紹介</title>
+  <title>winnie the pooh</title>
   <style>
     * {
       box-sizing: border-box;
@@ -88,6 +88,28 @@
       padding: 8px 12px;
       font-size: 14px;
       font-weight: 700;
+    }
+
+    .page-button {
+      width: fit-content;
+      display: inline-block;
+      background: #2f6fbb;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(47, 111, 187, 0.22);
+    }
+
+    .page-button:hover {
+      background: #255c9d;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .friends {
@@ -213,7 +235,7 @@
 </head>
 <body>
   <header>
-    <h1>プーさんと友達の紹介</h1>
+    <h1>winnie the pooh</h1>
     <p>
       のんびり屋のプーさんと、森で一緒に過ごす友達たち。
       それぞれの性格や魅力を、やさしい雰囲気でまとめました。
@@ -222,6 +244,10 @@
 
   <main>
     <section class="intro" aria-labelledby="pooh-title">
+      <div class="nav-buttons">
+        <a class="page-button" href="toy-story.html">トイストーリーへ</a>
+        <a class="page-button" href="aladdin.html">アラジンへ</a>
+      </div>
       <h2 id="pooh-title">プーさん</h2>
       <img
         class="pooh-photo"

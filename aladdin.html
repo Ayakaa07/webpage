@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アラジン</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #25313d;
+      background: #fff7e6;
+    }
+
+    header {
+      background: #0f4c81;
+      color: #ffffff;
+      padding: 56px 24px 48px;
+      text-align: center;
+      border-bottom: 6px solid #d99a23;
+    }
+
+    header p {
+      margin: 14px auto 0;
+      max-width: 640px;
+      line-height: 1.8;
+      color: #edf6ff;
+      font-size: 17px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.1;
+    }
+
+    main {
+      width: min(100%, 1040px);
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    .intro {
+      background: #ffffff;
+      border: 1px solid #ead9b8;
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 28px;
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 12px 32px rgba(91, 62, 34, 0.08);
+    }
+
+    .hero-photo,
+    .friend-photo {
+      width: 100%;
+      object-fit: contain;
+      background: #fffaf0;
+      border-radius: 8px;
+      border: 1px solid #ead9b8;
+      display: block;
+    }
+
+    .hero-photo {
+      aspect-ratio: 1200 / 630;
+    }
+
+    .friend-photo {
+      aspect-ratio: 4 / 3;
+    }
+
+    .intro h2,
+    .friends h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.8;
+      color: #4e5a64;
+    }
+
+    .quote {
+      margin-top: 4px;
+      padding-left: 12px;
+      border-left: 4px solid #d99a23;
+      color: #3f4650;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #fff1bd;
+      border: 1px solid #f2d36b;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .page-button {
+      width: fit-content;
+      display: inline-block;
+      background: #6f4aa8;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(111, 74, 168, 0.22);
+    }
+
+    .page-button:hover {
+      background: #58398b;
+    }
+
+    .friends {
+      display: grid;
+      gap: 18px;
+    }
+
+    .friend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .friend-card {
+      background: #ffffff;
+      border: 1px solid #ead9b8;
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 220px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(91, 62, 34, 0.06);
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .aladdin {
+      background: #0f4c81;
+    }
+
+    .jasmine {
+      background: #2f8f7a;
+    }
+
+    .genie {
+      background: #2f6fbb;
+    }
+
+    .abu {
+      background: #7b5a3d;
+    }
+
+    .magic {
+      background: #6f4aa8;
+    }
+
+    .jafar {
+      background: #b43b3b;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: #6f604a;
+      padding: 0 20px 32px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .friend-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        padding: 44px 20px 36px;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      .intro,
+      .friend-card {
+        padding: 20px;
+      }
+
+      .friend-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>アラジン</h1>
+    <p>
+      砂漠の街を舞台に、勇気と願いが広がる冒険の物語。
+      仲間たちの魅力を、明るく楽しい雰囲気でまとめました。
+    </p>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="aladdin-title">
+      <div class="nav-buttons">
+        <a class="page-button" href="index.html">winnie the poohへ</a>
+        <a class="page-button" href="toy-story.html">トイストーリーへ</a>
+      </div>
+      <h2 id="aladdin-title">アラジン</h2>
+      <img
+        class="hero-photo"
+        src="a.jpg"
+        alt="魔法のランプと砂漠をイメージしたアラジンの紹介画像"
+      >
+      <p>
+        アラジンは、自由を求める青年が仲間と出会い、
+        自分らしさと本当の勇気を見つけていく物語です。
+        魔法のランプや空飛ぶじゅうたんなど、わくわくする冒険が広がります。
+      </p>
+      <div class="quote">「本当の願いは、自分の心に正直になることから始まる。」</div>
+      <div class="tags" aria-label="アラジンの特徴">
+        <span class="tag">冒険</span>
+        <span class="tag">魔法</span>
+        <span class="tag">友情</span>
+        <span class="tag">勇気</span>
+      </div>
+    </section>
+
+    <section class="friends" aria-labelledby="friends-title">
+      <h2 id="friends-title">キャラクター紹介</h2>
+      <div class="friend-grid">
+        <article class="friend-card">
+          <div class="icon aladdin" aria-hidden="true">ア</div>
+          <h3>アラジン</h3>
+          <p>
+            明るく行動力のある青年です。
+            仲間を大切にしながら、自分らしい未来を探して進みます。
+          </p>
+          <div class="quote">「大切なのは、心まで変えないこと。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon jasmine" aria-hidden="true">ジ</div>
+          <h3>ジャスミン</h3>
+          <p>
+            自分の考えをしっかり持つ王女です。
+            自由と正しさを大切にして、勇気を持って行動します。
+          </p>
+          <div class="quote">「自分の道は、自分の声で決めたい。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon genie" aria-hidden="true">ラ</div>
+          <h3>ランプの魔人</h3>
+          <p>
+            明るく楽しい魔法の仲間です。
+            ふざけた雰囲気の中にも、友達思いのやさしさがあります。
+          </p>
+          <div class="quote">「願いより大切なものを、友達が教えてくれる。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon abu" aria-hidden="true">ア</div>
+          <h3>アブー</h3>
+          <p>
+            すばしっこくて好奇心いっぱいの相棒です。
+            いたずら好きですが、アラジンのことをいつも大切に思っています。
+          </p>
+          <div class="quote">「小さな相棒にも、大きな勇気がある。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon magic" aria-hidden="true">じ</div>
+          <h3>魔法のじゅうたん</h3>
+          <p>
+            空を飛ぶ不思議なじゅうたんです。
+            言葉はなくても、動きで気持ちを伝える頼れる友達です。
+          </p>
+          <div class="quote">「空へ飛び出せば、世界はもっと広く見える。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon jafar" aria-hidden="true">ジ</div>
+          <h3>ジャファー</h3>
+          <p>
+            大きな力を求める魔法使いです。
+            物語に緊張感を生み、アラジンたちの勇気を引き立てます。
+          </p>
+          <div class="quote">「力だけでは、本当に大切なものは手に入らない。」</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>アラジンと仲間たちの魅力をまとめた紹介ページです。</p>
+  </footer>
+</body>
+</html>

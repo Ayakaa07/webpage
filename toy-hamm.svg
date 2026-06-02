@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#fff2f6"/>
+  <ellipse cx="200" cy="150" rx="112" ry="74" fill="#d8789a"/>
+  <circle cx="112" cy="134" r="28" fill="#d8789a"/>
+  <circle cx="288" cy="134" r="28" fill="#d8789a"/>
+  <ellipse cx="200" cy="158" rx="32" ry="24" fill="#ef9ab5"/>
+  <circle cx="190" cy="158" r="5" fill="#7a3b52"/>
+  <circle cx="210" cy="158" r="5" fill="#7a3b52"/>
+  <circle cx="164" cy="126" r="8" fill="#25313d"/>
+  <circle cx="236" cy="126" r="8" fill="#25313d"/>
+  <path d="M174 197h52" stroke="#7a3b52" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 212l-22 32M272 212l22 32" stroke="#7a3b52" stroke-width="10" stroke-linecap="round"/>
+  <text x="200" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#d8789a">HAMM</text>
+</svg>

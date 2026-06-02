@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">トイストーリー風のおもちゃ画像</title>
+  <desc id="desc">青い背景に、赤、青、黄色のおもちゃブロックと星が並んでいるイラスト</desc>
+  <rect width="1200" height="630" fill="#f8fbff"/>
+  <path d="M0 0h1200v370H0z" fill="#2f6fbb"/>
+  <g opacity="0.18" fill="#ffffff">
+    <circle cx="120" cy="90" r="18"/>
+    <circle cx="310" cy="170" r="12"/>
+    <circle cx="960" cy="120" r="16"/>
+    <circle cx="1080" cy="260" r="10"/>
+    <path d="M675 87l13 27 30 4-22 21 5 30-26-14-27 14 6-30-22-21 30-4z"/>
+    <path d="M160 235l10 20 22 3-16 16 4 22-20-10-20 10 4-22-16-16 22-3z"/>
+    <path d="M1018 196l11 23 25 4-18 17 4 25-22-12-23 12 5-25-18-17 25-4z"/>
+  </g>
+  <path d="M0 370c170-45 322-45 456 0s294 45 480 0c93-23 181-31 264-25v285H0z" fill="#fff4c6"/>
+  <path d="M0 430c150-30 288-29 414 2s268 32 426 1c137-27 257-36 360-26v223H0z" fill="#f3d76d"/>
+  <g transform="translate(240 220)">
+    <rect x="0" y="135" width="210" height="210" rx="24" fill="#d94832"/>
+    <rect x="16" y="151" width="178" height="178" rx="18" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.42"/>
+    <text x="105" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="116" font-weight="900" fill="#ffffff">T</text>
+  </g>
+  <g transform="translate(495 160)">
+    <rect x="0" y="135" width="230" height="230" rx="26" fill="#2f6fbb"/>
+    <rect x="18" y="153" width="194" height="194" rx="18" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.42"/>
+    <text x="115" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="126" font-weight="900" fill="#ffffff">O</text>
+  </g>
+  <g transform="translate(775 230)">
+    <rect x="0" y="135" width="205" height="205" rx="24" fill="#e0b02d"/>
+    <rect x="16" y="151" width="173" height="173" rx="18" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.44"/>
+    <text x="102.5" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="112" font-weight="900" fill="#1f2d3a">Y</text>
+  </g>
+  <g fill="#d94832">
+    <circle cx="181" cy="486" r="18"/>
+    <circle cx="1050" cy="502" r="16"/>
+  </g>
+  <g fill="#2f6fbb">
+    <rect x="118" y="408" width="46" height="46" rx="8"/>
+    <rect x="1012" y="393" width="44" height="44" rx="8"/>
+  </g>
+</svg>

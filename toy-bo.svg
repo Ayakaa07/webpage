@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f6f2ff"/>
+  <circle cx="200" cy="112" r="50" fill="#f1c7b3"/>
+  <path d="M142 108c8-54 108-54 116 0-34-22-82-22-116 0z" fill="#f3d8b6"/>
+  <rect x="132" y="162" width="136" height="96" rx="28" fill="#7d78c7"/>
+  <path d="M132 210h136" stroke="#ffffff" stroke-width="18" opacity=".75"/>
+  <path d="M282 94c35 42 20 92-20 116" fill="none" stroke="#7d78c7" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="181" cy="112" r="7" fill="#25313d"/>
+  <circle cx="219" cy="112" r="7" fill="#25313d"/>
+  <path d="M180 136c14 9 26 9 40 0" fill="none" stroke="#8b3f2f" stroke-width="6" stroke-linecap="round"/>
+  <text x="200" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#7d78c7">BO PEEP</text>
+</svg>
