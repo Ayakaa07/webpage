@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シンデレラ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #25313d;
+      background: #f7fbff;
+    }
+
+    header {
+      background: #6fa7df;
+      color: #ffffff;
+      padding: 56px 24px 48px;
+      text-align: center;
+      border-bottom: 6px solid #d9c8f0;
+    }
+
+    header p {
+      margin: 14px auto 0;
+      max-width: 640px;
+      line-height: 1.8;
+      color: #f5fbff;
+      font-size: 17px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.1;
+    }
+
+    main {
+      width: min(100%, 1040px);
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    .intro {
+      background: #ffffff;
+      border: 1px solid #d8e6f5;
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 28px;
+      display: grid;
+      gap: 18px;
+      box-shadow: 0 12px 32px rgba(56, 79, 105, 0.08);
+    }
+
+    .hero-photo,
+    .friend-photo {
+      width: 100%;
+      object-fit: contain;
+      background: #f8fbff;
+      border-radius: 8px;
+      border: 1px solid #d8e6f5;
+      display: block;
+    }
+
+    .hero-photo {
+      aspect-ratio: 1200 / 630;
+    }
+
+    .friend-photo {
+      aspect-ratio: 4 / 3;
+    }
+
+    .intro h2,
+    .friends h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.8;
+      color: #4e5a64;
+    }
+
+    .quote {
+      margin-top: 4px;
+      padding-left: 12px;
+      border-left: 4px solid #9fc8f2;
+      color: #3f4650;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .tags,
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #edf6ff;
+      border: 1px solid #c9def4;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .page-button {
+      width: fit-content;
+      display: inline-block;
+      background: #6a6fb4;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(106, 111, 180, 0.22);
+    }
+
+    .page-button:hover {
+      background: #555a99;
+    }
+
+    .friends {
+      display: grid;
+      gap: 18px;
+    }
+
+    .friend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .friend-card {
+      background: #ffffff;
+      border: 1px solid #d8e6f5;
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 220px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(56, 79, 105, 0.06);
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 20px;
+      background: #6fa7df;
+    }
+
+    .prince {
+      background: #6a6fb4;
+    }
+
+    .fairy {
+      background: #d8789a;
+    }
+
+    .mouse {
+      background: #7b5a3d;
+    }
+
+    .step {
+      background: #8f69c9;
+    }
+
+    .shoe {
+      background: #4d87c1;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: #6f604a;
+      padding: 0 20px 32px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .friend-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        padding: 44px 20px 36px;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      .intro,
+      .friend-card {
+        padding: 20px;
+      }
+
+      .friend-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>シンデレラ</h1>
+    <p>
+      やさしさと希望を持ち続けるシンデレラの物語。
+      夢に向かって進む登場人物たちの魅力をまとめました。
+    </p>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="cinderella-title">
+      <div class="nav-buttons">
+        <a class="page-button" href="index.html">winnie the poohへ</a>
+        <a class="page-button" href="toy-story.html">トイストーリーへ</a>
+        <a class="page-button" href="aladdin.html">アラジンへ</a>
+      </div>
+      <h2 id="cinderella-title">シンデレラ</h2>
+      <img
+        class="hero-photo"
+        src="cinderella-hero.svg"
+        alt="シンデレラとガラスの靴をイメージした紹介画像"
+      >
+      <p>
+        シンデレラは、つらい毎日の中でもやさしさと希望を忘れず、
+        自分の未来を信じて進む物語です。魔法の夜会やガラスの靴が、
+        夢へ向かう一歩を美しく描きます。
+      </p>
+      <div class="quote">「希望をなくさなければ、明日はきっと変えられる。」</div>
+      <div class="tags" aria-label="シンデレラの特徴">
+        <span class="tag">希望</span>
+        <span class="tag">やさしさ</span>
+        <span class="tag">魔法</span>
+        <span class="tag">夢</span>
+      </div>
+    </section>
+
+    <section class="friends" aria-labelledby="friends-title">
+      <h2 id="friends-title">キャラクター紹介</h2>
+      <div class="friend-grid">
+        <article class="friend-card">
+          <div class="icon" aria-hidden="true">シ</div>
+          <h3>シンデレラ</h3>
+          <img
+            class="friend-photo"
+            src="s.jpg"
+            alt="シンデレラの紹介画像"
+          >
+          <p>
+            やさしく前向きな心を持つ女の子です。
+            困難な時にも希望を失わず、夢を信じ続けます。
+          </p>
+          <div class="quote">「小さな希望を、大切に育てていく。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon prince" aria-hidden="true">王</div>
+          <h3>王子</h3>
+          <img
+            class="friend-photo"
+            src="data:image/jpeg;base64,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"
+            alt="王子の紹介画像"
+          >
+          <p>
+            舞踏会でシンデレラと出会う王子です。
+            ガラスの靴を手がかりに、大切な人を探します。
+          </p>
+          <div class="quote">「一度の出会いが、心に残ることもある。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon fairy" aria-hidden="true">妖</div>
+          <h3>フェアリー・ゴッドマザー</h3>
+          <p>
+            シンデレラを助ける魔法使いです。
+            夢へ踏み出すきっかけを、やさしい魔法で届けます。
+          </p>
+          <div class="quote">「信じる気持ちに、魔法はそっと寄り添う。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon mouse" aria-hidden="true">ジ</div>
+          <h3>ジャックとガス</h3>
+          <p>
+            シンデレラを慕う小さな友達です。
+            体は小さくても、仲間のために一生懸命がんばります。
+          </p>
+          <div class="quote">「小さな力も、集まれば大きな助けになる。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon step" aria-hidden="true">継</div>
+          <h3>継母</h3>
+          <p>
+            シンデレラに厳しく接する人物です。
+            物語の中で、シンデレラの強さとやさしさを際立たせます。
+          </p>
+          <div class="quote">「つらい時こそ、本当の心が見えてくる。」</div>
+        </article>
+
+        <article class="friend-card">
+          <div class="icon shoe" aria-hidden="true">靴</div>
+          <h3>ガラスの靴</h3>
+          <p>
+            魔法の夜に残された大切な手がかりです。
+            シンデレラの夢と未来をつなぐ象徴になっています。
+          </p>
+          <div class="quote">「一歩進んだ足跡が、未来へつながる。」</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>シンデレラと登場人物たちの魅力をまとめた紹介ページです。</p>
+  </footer>
+</body>
+</html>

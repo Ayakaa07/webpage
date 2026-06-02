@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#eef6ff"/>
+  <path d="M0 0h1200v390H0z" fill="#7fb3e6"/>
+  <circle cx="980" cy="105" r="55" fill="#fff7c2" opacity=".95"/>
+  <g fill="#ffffff" opacity=".8">
+    <path d="M176 96l10 22 24 3-17 17 4 24-21-11-22 11 4-24-17-17 24-3z"/>
+    <path d="M418 158l8 17 19 3-14 13 4 19-17-9-17 9 3-19-13-13 19-3z"/>
+    <path d="M1064 252l10 21 23 3-17 16 4 23-20-11-21 11 4-23-16-16 23-3z"/>
+  </g>
+  <path d="M0 382c140-36 282-32 426 12 150 46 304 43 462-8 120-39 224-51 312-38v282H0z" fill="#f5f0ff"/>
+  <path d="M0 465c160-36 318-31 474 15 142 42 284 37 426-14 118-42 218-54 300-40v204H0z" fill="#d9c8f0"/>
+  <g transform="translate(450 170)">
+    <path d="M150 40c55 32 83 83 78 153-4 65-40 103-78 103s-74-38-78-103c-5-70 23-121 78-153z" fill="#9fc8f2"/>
+    <path d="M92 238c-38 24-64 62-76 114h268c-12-52-38-90-76-114-38 24-78 24-116 0z" fill="#6fa7df"/>
+    <path d="M70 352h160c28 0 52 16 62 42H8c10-26 34-42 62-42z" fill="#4d87c1"/>
+    <path d="M102 68c18-50 78-62 112-18-42-7-77 3-112 18z" fill="#f7d97a"/>
+    <circle cx="132" cy="126" r="7" fill="#25313d"/>
+    <circle cx="168" cy="126" r="7" fill="#25313d"/>
+    <path d="M130 150c14 10 26 10 40 0" fill="none" stroke="#8b3f2f" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(760 345)">
+    <path d="M70 50c45-20 92-18 142 6-37 24-82 36-134 36-34 0-57-8-68-24 12-5 32-11 60-18z" fill="#e8f5ff"/>
+    <path d="M20 70c48-4 82-2 102 6" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M158 75h70" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#ffffff">CINDERELLA</text>
+</svg>
