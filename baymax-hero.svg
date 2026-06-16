@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Baymax style healthcare hero</title>
+  <desc id="desc">A gentle healthcare robot silhouette with city lights and soft red accents.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e9fbff"/>
+      <stop offset="0.58" stop-color="#f7fdff"/>
+      <stop offset="1" stop-color="#ffe8e4"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" x2="1">
+      <stop offset="0" stop-color="#d64242"/>
+      <stop offset="1" stop-color="#ff7b65"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="970" cy="122" r="64" fill="#ffffff" opacity=".85"/>
+  <path d="M0 500 C180 455 310 540 468 496 C660 443 780 470 940 510 C1040 535 1120 525 1200 492 L1200 630 L0 630 Z" fill="#dceff5"/>
+  <g opacity=".72">
+    <rect x="70" y="348" width="68" height="154" rx="10" fill="#9fc3cf"/>
+    <rect x="162" y="308" width="96" height="194" rx="12" fill="#b8d6df"/>
+    <rect x="286" y="370" width="72" height="132" rx="10" fill="#98bfcb"/>
+    <rect x="852" y="330" width="86" height="172" rx="12" fill="#afd1da"/>
+    <rect x="966" y="286" width="118" height="216" rx="14" fill="#91b9c5"/>
+  </g>
+  <g fill="#ffffff" opacity=".72">
+    <rect x="186" y="336" width="18" height="20" rx="4"/>
+    <rect x="218" y="336" width="18" height="20" rx="4"/>
+    <rect x="186" y="380" width="18" height="20" rx="4"/>
+    <rect x="218" y="380" width="18" height="20" rx="4"/>
+    <rect x="992" y="320" width="22" height="24" rx="4"/>
+    <rect x="1036" y="320" width="22" height="24" rx="4"/>
+    <rect x="992" y="374" width="22" height="24" rx="4"/>
+    <rect x="1036" y="374" width="22" height="24" rx="4"/>
+  </g>
+  <g transform="translate(460 118)">
+    <ellipse cx="140" cy="322" rx="176" ry="78" fill="#c9dfe6" opacity=".45"/>
+    <path d="M-6 248 C-86 184 -84 96 -32 74 C24 50 66 110 74 184 C80 238 50 282 6 286 Z" fill="#fff"/>
+    <path d="M286 248 C366 184 364 96 312 74 C256 50 214 110 206 184 C200 238 230 282 274 286 Z" fill="#fff"/>
+    <ellipse cx="140" cy="232" rx="128" ry="170" fill="#fff"/>
+    <circle cx="140" cy="72" r="70" fill="#fff"/>
+    <circle cx="112" cy="72" r="8" fill="#25313d"/>
+    <circle cx="168" cy="72" r="8" fill="#25313d"/>
+    <path d="M120 72 H160" stroke="#25313d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M72 214 C110 240 170 240 208 214" fill="none" stroke="#dde8ec" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="214" cy="188" r="19" fill="#f6fbfd" stroke="#d7e7ee" stroke-width="5"/>
+  </g>
+  <path d="M738 412 C814 355 884 350 958 398" fill="none" stroke="url(#red)" stroke-width="18" stroke-linecap="round" opacity=".88"/>
+  <circle cx="965" cy="403" r="18" fill="#d64242"/>
+</svg>
